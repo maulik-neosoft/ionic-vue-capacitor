@@ -18,13 +18,13 @@
           <ion-grid>
             <ion-row>
               <ion-col>
-                <span>X: {{ accel.x }}</span>
+                <span>X: {{ parseInt(accel.x) }}</span>
               </ion-col>
               <ion-col>
-                <span>Y: {{ accel.y }}</span>
+                <span>Y: {{ parseInt(accel.y) }}</span>
               </ion-col>
               <ion-col>
-               <span>Z: {{ accel.z }}</span>
+               <span>Z: {{ parseInt(accel.z) }}</span>
               </ion-col>
             </ion-row>
           </ion-grid>
@@ -38,13 +38,13 @@
           <ion-grid>
             <ion-row>
               <ion-col>
-                <span>X: {{ accelGravity.x }}</span>
+                <span>X: {{ parseInt(accelGravity.x) }}</span>
               </ion-col>
               <ion-col>
-                <span>Y: {{ accelGravity.y }}</span>
+                <span>Y: {{ parseInt(accelGravity.y) }}</span>
               </ion-col>
               <ion-col>
-                <span>Z: {{ accelGravity.z }}</span>
+                <span>Z: {{ parseInt(accelGravity.z) }}</span>
               </ion-col>
             </ion-row>
           </ion-grid>
@@ -58,13 +58,13 @@
           <ion-grid>
             <ion-row>
               <ion-col>
-                <span>Alpha: {{ rotationRate.alpha }}</span>
+                <span>Alpha: {{ parseInt(rotationRate.alpha) }}</span>
               </ion-col>
               <ion-col>
-                <span>Beta: {{ rotationRate.beta }}</span>
+                <span>Beta: {{ parseInt(rotationRate.beta) }}</span>
               </ion-col>
               <ion-col>
-                <span>Gamma: {{ rotationRate.gamma }}</span>
+                <span>Gamma: {{ parseInt(rotationRate.gamma) }}</span>
               </ion-col>
             </ion-row>
           </ion-grid>
