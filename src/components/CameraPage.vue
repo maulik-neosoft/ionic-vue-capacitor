@@ -9,6 +9,7 @@
       <img :src="imageUrl ? imageUrl : null" />
       <ion-button @click="takePicture()">Take Picture Now</ion-button>
       <ion-button @click="nextPage()">Get Location</ion-button>
+      <ion-button @click="deviceInfo()">Device Info</ion-button>
       <!-- <ion-button @click="scan()">SCAN</ion-button> -->
     </ion-content>
   </div>
@@ -103,6 +104,9 @@ export default {
           // console.log("error", e);
         }
       }
+    },
+    deviceInfo() {
+      this.$router.push('/device-info-page');
     }
   }
 };
