@@ -7,7 +7,7 @@ import router from "./router";
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 
 Vue.use(Ionic);
 
