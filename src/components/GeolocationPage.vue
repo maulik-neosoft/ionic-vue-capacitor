@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { Plugins, GeolocationOptions } from "@capacitor/core";
+import { Plugins } from "@capacitor/core";
 const { Geolocation } = Plugins;
 
 export default {
@@ -35,17 +35,17 @@ export default {
     goBack() {
       this.$router.go(-1);
     },
-    showDetail(_item) {
-      console.log(_item);
+    showDetail() {
+      // console.log(_item);
     },
     async getLocation() {
-      console.log("got getLocation event");
+      // console.log("got getLocation event");
 
       let location = await Geolocation.getCurrentPosition({
         enableHighAccuracy: true,
         timeout: 30000
       });
-      console.log("location", location.coords);
+      // console.log("location", location.coords);
       this.location = location.coords.latitude + " " + location.coords.longitude ;
     }
   }
